@@ -7,12 +7,6 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
-  body {
-    margin: 0;
-    font-family: system-ui;
-  }
-
-
   :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -42,12 +36,10 @@ export default createGlobalStyle`
   --borderCard: var(--darkbrown);
   --bgForm: var(--lightgray-100);
   --bgFormBorder: var(--darkgray);
+  --backgroundNavigation: var(--darkgray);
+  --foregroundBorder: var(--lightgray);
 }
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
+  
   body,
   h1,
   h2,
@@ -57,15 +49,14 @@ export default createGlobalStyle`
   }
 
 body {
+  margin: 0;
+  font-family: system-ui;
   background-color: var(--bgBody);
   display: grid;
   justify-content: center;
   color: var(--black); /* default color */
 }
-header {
-  background-color: var(--bgHeader);
-  margin-bottom: 1rem
-}
+
 h1 {
   font-size: 3.2em;
   text-align: center;
@@ -85,13 +76,7 @@ ol li {
   padding: 0;
 }
 
-#root {
-  display: contents;
-}
 
-.app {
-  width: min(600px, 100% - 2rem);
-}
 
 
 `;

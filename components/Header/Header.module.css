@@ -1,6 +1,18 @@
-h1 {
-    font-size: 2em;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
+.header {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: .25rem 0;
+    background: var(--bgHeader);
+    border-bottom: 3px solid var(--foregroundBorder);
+  }
+  
+  .header__title {
+    text-align: center;
+    color: var(--creamewhite);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+  
