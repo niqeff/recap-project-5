@@ -1,13 +1,10 @@
-import Cards from '@/components/Cards';
-import Navigation from '../components/Navigation';
+import Cards from "@/components/Cards";
 
 export default function ArtPieces() {
-    return (
-        <>
-
-            <h1>Overview Page Art-Pieces</h1>
-            <Cards >hallo</Cards>
-
-        </>
-    );
+  return (
+    <>
+      <h1>Overview Page Art-Pieces</h1>
+      <Cards>hallo</Cards>
+    </>
+  );
 }
