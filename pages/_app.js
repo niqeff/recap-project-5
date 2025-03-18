@@ -36,10 +36,9 @@ export default function App({ Component, pageProps }) {
     return arts
   }
 
-  const [arts, setArts] = useState();
+  const [arts, setArts] = useState([]);
 
   console.log(arts);
-
 
   return (
     <>
@@ -47,6 +46,9 @@ export default function App({ Component, pageProps }) {
       <Header />
 
       <Component {...pageProps} />
+      {arts.map((art) => (
+        <h2>{art.name}</h2>
+      ))}
 
       <Navigation />
     </>
