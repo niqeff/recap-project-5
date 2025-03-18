@@ -9,7 +9,9 @@ const URL = "https://example-apis.vercel.app/api/art";
 const fetcher = async (url) => {
   const res = await fetch(url);
   if (!res.ok) {
-    const error = new Error("An error occurred while fetching the data.");
+    const error = new Error(
+      `An error occurred while fetching the data from url ${url}.`
+    );
     error.info = await res.json();
     error.status = res.status;
     throw error;
@@ -35,7 +37,7 @@ export default function App({ Component, pageProps }) {
       <GlobalStyle />
       <Header />
 
-      <Component {...pageProps} />
+      <Component {...pageProps} arts={arts} />
       {/* {arts.map((art) => (
         <h2>{art.name}</h2>
       ))} */}
