@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Navigation from "@/components/Navigation";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import useSWR from "swr";
 import GlobalStyle from "../styles";
 
@@ -34,12 +34,7 @@ export default function App({ Component, pageProps }) {
     <>
       <GlobalStyle />
       <Header />
-
-      <Component {...pageProps} />
-      {/* {arts.map((art) => (
-        <h2>{art.name}</h2>
-      ))} */}
-
+      <Component {...pageProps} arts={arts} />
       <Navigation />
     </>
   );
