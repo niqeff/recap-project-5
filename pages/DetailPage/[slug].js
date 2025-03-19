@@ -27,7 +27,9 @@ export default function DetailPage({ arts }) {
                     <li>{currentArt.year}</li>
                     <li>{currentArt.genre}</li>
                 </ul>
-                <Link href="/art-pieces" style={{ paddingBottom: "10rem" }}> Back to gallery</Link>
+                <Link href="/art-pieces" style={{ paddingBottom: "10rem" }}>
+                    <button> Back to gallery</button>
+                </Link>
             </div>
             <Navigation />
         </>
